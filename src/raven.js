@@ -208,9 +208,7 @@ var Raven = {
         try {
             TK.report(ex, options);
         } catch(ex1) {
-            if(ex !== ex1) {
-                throw ex1;
-            }
+            throw ex1;
         }
 
         return Raven;
